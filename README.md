@@ -1,120 +1,168 @@
-# 🏨 Hotel Management System – "Grand Sapphire"
+Hotel Management System
+Overview
+The Hotel Management System is a C++-based software solution designed to automate and streamline hotel operations, including room bookings, guest management, billing, and reporting. Named "The Grand Sapphire," this system eliminates the inefficiencies of traditional paper-based methods by providing a secure, user-friendly interface for hotel staff to manage operations efficiently.
+This project was developed as part of the Project - I (CS3201) course at the Indian Institute of Information Technology Senapati, Manipur, under the supervision of Dr. Kishorjit Nongmeikapam. The system is implemented using object-oriented programming principles and file-based storage for data persistence.
+Features
 
-This is a C++ based Hotel Management System developed as part of the B.Tech Project-I course (CS3201) at the Indian Institute of Information Technology, Senapati, Manipur.
+User Authentication: Secure login module to restrict access to authorized hotel staff.
+Room Management: Add, view, modify, and delete room bookings, including checking room availability.
+Customer Management: Store and manage guest information such as name, address, and phone number.
+Restaurant Module: Handle food orders and add associated charges to guest bills.
+Invoice and Reporting: Generate invoices for checkouts and produce reports summarizing hotel operations (e.g., total rooms booked, earnings).
+Feedback Module: Collect and store customer feedback for service improvement.
+Data Persistence: Store data in files (Record.txt for bookings and customer data, Feedback.txt for feedback).
+CRUD Operations: Support for Create, Read, Update, and Delete operations on hotel records.
 
----
+Objectives
 
-## 📌 Project Overview
+Automate hotel operations to reduce manual errors and improve efficiency.
+Provide secure and organized storage for hotel data.
+Offer an intuitive, user-friendly interface for staff.
+Enable efficient data retrieval and reporting.
+Ensure data integrity and security through authentication mechanisms.
 
-The Hotel Management System is designed to automate and streamline key operations of a hotel such as:
+System Requirements
+Hardware
 
-- Room bookings
-- Guest check-ins and check-outs
-- Restaurant ordering
-- Billing and invoice generation
-- Feedback collection
-- Report generation
+Standard computer with sufficient storage for program files and data records.
 
-The system uses file handling for data persistence (`Record.txt` and `Feedback.txt`) and offers a secure, menu-driven console interface for staff.
+Software
 
----
+C++ compiler (e.g., g++)
+Text editor or IDE (e.g., VS Code, Code::Blocks)
+Operating system supporting <iostream>, <fstream>, <string>, and <conio.h> libraries.
 
-## 🎯 Objectives
+Installation
 
-- Eliminate manual hotel processes with automation
-- Provide secure storage for guest and room information
-- Support complete CRUD operations (Create, Read, Update, Delete)
-- Implement basic staff authentication
-- Improve operational efficiency and guest satisfaction
+Clone or Download the Project:
+Obtain the source code from the repository or project files.
 
----
 
-## 🛠️ Features
+Set Up the Environment:
+Ensure a C++ compiler (e.g., g++) is installed.
+Verify that the required libraries (iostream, fstream, string, iomanip, conio.h) are supported.
 
-- 🗝️ **Authentication** – Simple login system for hotel staff  
-- 🛏️ **Room Management** – Book, edit, and view room reservations  
-- 🧾 **Billing Module** – Automatic fare calculation and invoice printing  
-- 🍽️ **Restaurant Services** – Take food orders linked to room bills  
-- 📊 **Reports** – Generate daily revenue and occupancy reports  
-- ✍️ **Feedback Module** – Collect customer feedback for analysis  
 
----
+Compile the Code:g++ main.cpp -o hotel_management
 
-## 📂 Files
 
-- `main.cpp` – Main source code implementing the system logic  
-- `Record.txt` – Stores booking and billing information  
-- `Feedback.txt` – Stores customer feedback  
+Run the Program:./hotel_management
 
----
 
-## 💻 Technologies Used
+File Permissions:
+Ensure the program has read/write permissions for Record.txt and Feedback.txt in the working directory.
 
-- Language: C++  
-- Libraries: `iostream`, `fstream`, `iomanip`, `conio.h`  
-- Storage: File-based system using `.txt` files  
-- Platform: Windows (tested using MinGW / GCC)  
 
----
 
-## ▶️ How to Run
+Usage
 
-### Option 1: Using Command Line (MinGW / GCC)
+Login:
+Enter valid staff credentials to access the system.
 
-Clone or download this repository:
 
-```bash
-git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
-Navigate to the project folder:
+Main Menu:
+Choose from options such as:
+Book a Room
+Display Customer Information
+View Allotted Rooms
+Edit Customer Details
+Order Food
+Check Out and Print Invoice
+Provide Feedback
+Generate Report
+Exit
 
-bash
-Copy
-Edit
-cd Hotel-Management-System
-Compile the program:
 
-bash
-Copy
-Edit
-g++ main.cpp -o hotel.exe
-Run the executable:
 
-bash
-Copy
-Edit
-./hotel.exe
-Option 2: Using Code::Blocks or Dev C++
-Open main.cpp in your IDE
 
-Create a new project (if required)
+Perform Operations:
+Follow prompts to input data (e.g., customer details, room numbers, meal choices).
+The system saves data to files and generates invoices/reports as needed.
 
-Add main.cpp to the project
 
-Build and run the program using the Run button (usually F9)
 
-🧪 Testing Summary
-Unit, integration, and system-level testing performed
+Project Structure
 
-Regression and User Acceptance Testing (UAT) completed
+Source Files:
+Main implementation in C++ (e.g., main.cpp containing the SAPPHIRE_HOTEL class).
 
-All core functionalities tested successfully using defined test cases
 
-🧠 Future Improvements
-Replace file storage with SQL database
+Data Files:
+Record.txt: Stores customer and booking information.
+Feedback.txt: Stores customer feedback.
 
-Add GUI using Qt or wxWidgets
 
-Improve authentication with password encryption
+Key Modules:
+SAPPHIRE_HOTEL Class: Handles core functionalities like authentication, room management, and reporting.
+Functions: login(), add(), display(), rooms(), edit(), restaurant(), printInvoice(), feedback(), generateReport().
 
-Add customer search and report filtering features
 
-Support mobile and cloud-based deployment
 
-👨‍💻 Author
-Sabinikari Saman
-Pursuing B.Tech in Computer Science & Engineering (AI & DS)
-Indian Institute of Information Technology, Senapati, Manipur
-Roll No: 220103031
+Testing
+The system was tested using a combination of black-box and white-box testing approaches:
 
-📃 License
-This project is developed as an academic submission. Please contact the author for reuse or collaboration.
+Unit Testing: Tested individual functions (e.g., applyDiscount, check).
+Integration Testing: Verified interactions between modules (e.g., booking and invoice generation).
+System Testing: Simulated real-world scenarios (e.g., complete booking process).
+User Acceptance Testing (UAT): Conducted with hotel staff to ensure usability and functionality.
+
+Key Test Cases
+
+
+
+Test Case ID
+Functionality
+Input
+Expected Outcome
+
+
+
+TC_001
+Login
+Valid credentials
+Access granted
+
+
+TC_002
+Login
+Invalid credentials
+Access denied
+
+
+TC_003
+Add Customer
+Valid customer details
+Customer added successfully
+
+
+TC_019
+Print Invoice
+Existing room number
+Invoice generated correctly
+
+
+Issues Identified
+
+Weak input validation for invalid room numbers and non-existent records.
+Basic authentication mechanism (hardcoded credentials).
+Limited error handling for file operations and user input.
+
+Limitations and Future Improvements
+
+Security: Implement stronger authentication (e.g., password hashing).
+Error Handling: Add robust error checking for file operations and input validation.
+User Interface: Transition to a graphical user interface (GUI) using libraries like Qt or wxWidgets.
+Database Integration: Replace file-based storage with a database (e.g., SQLite, MySQL) for scalability.
+Advanced Features: Add online booking, payment gateways, and automated notifications.
+Mobile Accessibility: Develop a mobile app for remote access.
+Reporting: Enhance reports with filters (e.g., date range, room type).
+
+Conclusion
+The Hotel Management System provides a functional foundation for automating hotel operations. While it meets the core requirements, enhancements in security, user interface, and data management are recommended for real-world deployment. Future development can focus on GUI integration, database support, and advanced features to create a more robust and scalable solution.
+Contributors
+
+Sabinikari Saman (Roll No: 220103031)
+Supervisor: Dr. Kishorjit Nongmeikapam
+
+License
+This project is submitted as part of academic coursework and is not licensed for commercial use.
