@@ -6,7 +6,7 @@ This is a C++ based Hotel Management System developed as part of the B.Tech Proj
 
 ## 📌 Project Overview
 
-The **Hotel Management System** is designed to automate and streamline key operations of a hotel such as:
+The Hotel Management System is designed to automate and streamline key operations of a hotel such as:
 
 - Room bookings
 - Guest check-ins and check-outs
@@ -50,10 +50,10 @@ The system uses file handling for data persistence (`Record.txt` and `Feedback.t
 
 ## 💻 Technologies Used
 
-- **Language:** C++  
-- **Libraries:** iostream, fstream, iomanip, conio.h  
-- **Storage:** File-based system using `.txt` files  
-- **Platform:** Windows (tested using MinGW / GCC)
+- Language: C++  
+- Libraries: `iostream`, `fstream`, `iomanip`, `conio.h`  
+- Storage: File-based system using `.txt` files  
+- Platform: Windows (tested using MinGW / GCC)  
 
 ---
 
@@ -61,9 +61,10 @@ The system uses file handling for data persistence (`Record.txt` and `Feedback.t
 
 ### Option 1: Using Command Line (MinGW / GCC)
 
-1. **Clone or download** this repository:
-   ```bash
-   git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
+Clone or download this repository:
+
+```bash
+git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
 Navigate to the project folder:
 
 bash
@@ -89,7 +90,7 @@ Create a new project (if required)
 
 Add main.cpp to the project
 
-Build and run the program using the Run button (F9 in most IDEs)
+Build and run the program using the Run button (usually F9)
 
 🧪 Testing Summary
 Unit, integration, and system-level testing performed
@@ -118,10 +119,8 @@ Roll No: 220103031
 📃 License
 This project is developed as an academic submission. Please contact the author for reuse or collaboration.
 
-yaml
+kotlin
 Copy
 Edit
 
----
-
-Let me know if you'd like a downloadable `.md` file or help creating a GIF/demo to showcase your project visually on GitHub.
+Just copy and paste this as your README.md!
