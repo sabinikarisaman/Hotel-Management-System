@@ -1,8 +1,8 @@
-# Hotel-Management-System
-
 # 🏨 Hotel Management System – "Grand Sapphire"
 
-This is a C++ based Hotel Management System developed as a part of the B.Tech Project-I course (CS3201) at the Indian Institute of Information Technology, Senapati, Manipur.
+This is a C++ based Hotel Management System developed as part of the B.Tech Project-I course (CS3201) at the Indian Institute of Information Technology, Senapati, Manipur.
+
+---
 
 ## 📌 Project Overview
 
@@ -60,24 +60,30 @@ The system uses file handling for data persistence (`Record.txt` and `Feedback.t
 ## ▶️ How to Run
 
 ### Option 1: Using Command Line (MinGW / GCC)
-1. Open Git Bash / CMD / Terminal
-2. Navigate to the project folder:
+
+1. **Clone or download** this repository:
    ```bash
-   cd "D:/SEMESTER-V PROJECT"
+   git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
+Navigate to the project folder:
+
+bash
+Copy
+Edit
+cd Hotel-Management-System
 Compile the program:
 
 bash
 Copy
 Edit
 g++ main.cpp -o hotel.exe
-Run the program:
+Run the executable:
 
 bash
 Copy
 Edit
 ./hotel.exe
 Option 2: Using Code::Blocks or Dev C++
-Open main.cpp in the IDE
+Open main.cpp in your IDE
 
 Create a new project (if required)
 
@@ -86,11 +92,11 @@ Add main.cpp to the project
 Build and run the program using the Run button (F9 in most IDEs)
 
 🧪 Testing Summary
-Performed unit, integration, and system-level testing
+Unit, integration, and system-level testing performed
 
 Regression and User Acceptance Testing (UAT) completed
 
-All core functionalities tested successfully with test cases
+All core functionalities tested successfully using defined test cases
 
 🧠 Future Improvements
 Replace file storage with SQL database
@@ -105,8 +111,8 @@ Support mobile and cloud-based deployment
 
 👨‍💻 Author
 Sabinikari Saman
-Pursuing B.Tech in Computer Science & Engineering (AI & DS)  
-Indian Institute of Information Technology, Senapati, Manipur  
+Pursuing B.Tech in Computer Science & Engineering (AI & DS)
+Indian Institute of Information Technology, Senapati, Manipur
 Roll No: 220103031
 
 📃 License
@@ -118,11 +124,4 @@ Edit
 
 ---
 
-Let me know if you want the README in `.md` file format directly, or with screenshot support and GIF demo!
-
-
-
-
-
-
-
+Let me know if you'd like a downloadable `.md` file or help creating a GIF/demo to showcase your project visually on GitHub.
