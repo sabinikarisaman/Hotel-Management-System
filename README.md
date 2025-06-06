@@ -1,179 +1,207 @@
-The Grand Sapphire - Hotel Management System
-Project Overview
-The Grand Sapphire Hotel Management System is a C++-based application designed to automate and streamline hotel operations, including room bookings, guest management, billing, restaurant orders, and reporting. This system replaces inefficient manual processes with a secure, user-friendly interface for hotel staff, ensuring efficient data management and improved guest satisfaction.
-This project was developed as part of the Project - I (CS3201) course at the Indian Institute of Information Technology Senapati, Manipur, under the supervision of Dr. Kishorjit Nongmeikapam.
-Features
+# 🏨 The Grand Sapphire - Hotel Management System
 
-User Authentication: Secure login for authorized hotel staff.
-Room Management: Create, view, update, and delete room bookings, with availability checks.
-Customer Management: Store and manage guest details (name, address, phone).
-Restaurant Module: Process food orders and integrate charges into guest bills.
-Invoice and Reporting: Generate invoices for checkouts and reports on hotel operations (e.g., earnings, occupancy).
-Feedback Module: Collect and store customer feedback.
-Data Persistence: Use file-based storage (Record.txt for bookings, Feedback.txt for feedback).
-CRUD Operations: Support for Create, Read, Update, and Delete operations on hotel records.
+This is a **C++-based Hotel Management System** designed to automate and streamline hotel operations including bookings, guest management, billing, food orders, and reporting. Developed as part of the **Project-I (CS3201)** course at the **Indian Institute of Information Technology, Senapati, Manipur**, under the supervision of **Dr. Kishorjit Nongmeikapam**.
 
-Objectives
+---
 
-Automate hotel operations to reduce errors and improve efficiency.
-Provide secure, organized data storage.
-Offer an intuitive interface for staff.
-Enable fast data retrieval and comprehensive reporting.
-Ensure data security through authentication.
+## 📌 Project Overview
 
-Installation
-Prerequisites
+The Grand Sapphire replaces inefficient manual processes with a secure, user-friendly interface for hotel staff, ensuring:
+- Efficient data management
+- Streamlined guest service
+- Improved satisfaction
 
-Hardware: Standard computer with sufficient storage.
-Software:
-C++ compiler (e.g., g++)
-Text editor or IDE (e.g., VS Code, Code::Blocks)
-Operating system supporting <iostream>, <fstream>, <string>, <iomanip>, and <conio.h> libraries.
+---
 
+## ✨ Features
 
+- 🔐 **User Authentication:** Secure login for authorized hotel staff.
+- 🛏️ **Room Management:** Create, view, update, and delete room bookings.
+- 👤 **Customer Management:** Store and manage guest details.
+- 🍽️ **Restaurant Module:** Add food orders to guest bills.
+- 🧾 **Invoice & Reports:** Generate bills and hotel operation summaries.
+- 💬 **Feedback Module:** Collect customer feedback.
+- 💾 **Data Persistence:** File-based storage (`Record.txt`, `Feedback.txt`).
+- 🔄 **CRUD Operations:** Full create/read/update/delete support.
 
-Steps
+---
 
-Clone the Repository:git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
+## 🎯 Objectives
+
+- Automate hotel operations to reduce manual errors.
+- Maintain secure and structured data.
+- Provide an intuitive interface for staff use.
+- Enable quick reporting and data retrieval.
+- Secure access with login authentication.
+
+---
+
+## ⚙️ Installation
+
+### 🧰 Prerequisites
+
+- **Hardware:** Any standard PC
+- **Software:**
+  - C++ Compiler (e.g., `g++`)
+  - Text Editor or IDE (e.g., VS Code, Code::Blocks)
+  - Operating system supporting: `<iostream>`, `<fstream>`, `<string>`, `<iomanip>`, `<conio.h>`
+
+### 🧾 Steps
+
+```bash
+# Clone the repository
+git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
 cd Hotel-Management-System
 
+# Compile the code
+g++ main.cpp -o hotel_management
 
-Compile the Code:g++ main.cpp -o hotel_management
+# Run the program
+./hotel_management
+Ensure the program has read/write permissions for Record.txt and Feedback.txt.
 
+▶️ Usage
+🔑 Login
+Enter valid staff credentials to begin.
 
-Run the Program:./hotel_management
-
-
-File Permissions:
-Ensure the program has read/write permissions for Record.txt and Feedback.txt in the project directory.
-
-
-
-Usage
-
-Login:
-Enter valid staff credentials to access the system.
-
-
-Main Menu:
-Navigate options to:
+🧭 Main Menu Options
 Book a room
-View customer information
-Check allotted rooms
-Edit customer details
+
+View customer info
+
+View allotted rooms
+
+Edit customer info
+
 Order food
-Check out and print invoices
+
+Checkout & print invoices
+
 Provide feedback
+
 Generate reports
+
 Exit
 
+📝 Perform Operations
+Follow on-screen prompts to:
 
+Add guest/room/meal data
 
+Generate invoices and reports
 
-Perform Operations:
-Follow prompts to input data (e.g., guest details, room numbers, meal choices).
-Data is saved to files, and invoices/reports are generated as needed.
+Save and retrieve from file storage
 
-
-
-Project Structure
+📁 Project Structure
+bash
+Copy
+Edit
 Hotel-Management-System/
-├── main.cpp              # Main source code with SAPPHIRE_HOTEL class
-├── Record.txt            # Stores booking and customer data
-├── Feedback.txt          # Stores customer feedback
-├── README.md             # Project documentation
+├── main.cpp           # Main source code
+├── Record.txt         # Guest & booking records
+├── Feedback.txt       # Customer feedback
+├── README.md          # Documentation
+🧩 Key Modules
+SAPPHIRE_HOTEL Class
+Handles:
 
-Key Modules
+Authentication
 
-SAPPHIRE_HOTEL Class: Core class handling authentication, room/customer management, and reporting.
-Key Functions:
-login(): Authenticates staff.
-add(), display(), rooms(), edit(), delete_rec(): Manage bookings and customer data.
-restaurant(): Handles food orders.
-printInvoice(), generateReport(): Generate invoices and reports.
-feedback(): Records customer feedback.
+Room & guest management
 
+Invoicing and reporting
 
+🔑 Key Functions
+login(): Staff authentication
 
-Testing
-The system underwent rigorous testing:
+add(), display(), rooms(), edit(), delete_rec(): Booking and data management
 
-Black-box Testing: Verified functionality from a user perspective (e.g., correct invoice generation).
-White-box Testing: Analyzed code paths (e.g., discount calculations).
-Integration Testing: Ensured module interactions (e.g., booking to invoicing).
-User Acceptance Testing (UAT): Conducted with hotel staff to validate usability.
+restaurant(): Food order integration
 
-Sample Test Cases
+printInvoice(), generateReport(): Billing and analytics
 
+feedback(): Records feedback
 
+🧪 Testing
+✅ Testing Methods
+Black-box Testing: Tested from user POV (e.g., invoice generation)
 
-Test Case ID
-Functionality
-Input
-Expected Outcome
+White-box Testing: Checked internal logic (e.g., discount logic)
 
+Integration Testing: Checked module communication
 
+User Acceptance Testing (UAT): Verified with real hotel staff
 
-TC_001
-Login
-Valid credentials
-Access granted
+🧾 Sample Test Cases
+Test Case ID	Functionality	Input	Expected Outcome
+TC_001	Login	Valid credentials	Access granted
+TC_002	Login	Invalid credentials	Access denied
+TC_003	Add Customer	Valid guest details	Customer added
+TC_019	Print Invoice	Existing room number	Invoice generated
 
+🐞 Known Issues
+Hardcoded credentials (basic auth)
 
-TC_002
-Login
-Invalid credentials
-Access denied
+Limited validation for room numbers
 
+Weak error handling on file operations
 
-TC_003
-Add Customer
-Valid customer details
-Customer added successfully
+🚀 Limitations & Future Improvements
+🔐 Security: Add password hashing/salting
 
+🧱 Validation: Improve input checks
 
-TC_019
-Print Invoice
-Existing room number
-Invoice generated correctly
+🖥️ UI: Add graphical UI (e.g., Qt, wxWidgets)
 
+🗃️ Database: Migrate to MySQL/SQLite
 
-Known Issues
+🌐 Advanced Features: Online booking, payments, notifications
 
-Basic authentication (hardcoded credentials).
-Weak input validation for invalid room numbers.
-Limited error handling for file operations.
+📱 Mobile: Build a mobile app
 
-Limitations and Future Improvements
+☁️ Cloud Support: Enable cloud sync and backups
 
-Security: Implement password hashing and salting.
-Error Handling: Enhance validation and error messages.
-User Interface: Develop a graphical interface using Qt or wxWidgets.
-Database Integration: Migrate to SQLite or MySQL for scalability.
-Advanced Features: Add online booking, payment gateways, and notifications.
-Mobile Support: Create a mobile app for remote access.
-Cloud Deployment: Enable cloud-based access and backups.
+🤝 Contributing
+Contributions are welcome!
 
-Contributing
-Contributions are welcome! To contribute:
+Fork the repo
 
-Fork the repository.
-Create a new branch (git checkout -b feature-branch).
-Make changes and commit (git commit -m "Add feature").
-Push to the branch (git push origin feature-branch).
-Open a Pull Request.
+Create a feature branch:
 
-Contributors
+bash
+Copy
+Edit
+git checkout -b feature-branch
+Commit your changes:
 
+bash
+Copy
+Edit
+git commit -m "Add feature"
+Push the changes:
+
+bash
+Copy
+Edit
+git push origin feature-branch
+Open a Pull Request
+
+👨‍💻 Contributors
 Sabinikari Saman (Roll No: 220103031)
+
 Supervisor: Dr. Kishorjit Nongmeikapam
 
-License
-This project is for academic purposes and not licensed for commercial use.
-Acknowledgments
+📜 License
+This project is developed for academic purposes only and is not licensed for commercial use.
 
-Dr. Kishorjit Nongmeikapam for guidance and support.
-Indian Institute of Information Technology Senapati, Manipur for providing the academic framework.
+🙏 Acknowledgments
+Special thanks to Dr. Kishorjit Nongmeikapam for his continuous guidance.
 
+Thanks to IIIT Senapati, Manipur for the academic platform.
 
-For issues or suggestions, please open an issue on the GitHub repository.
+📬 For issues or suggestions, please open an issue on the GitHub repository.
+vbnet
+Copy
+Edit
+
+Let me know if you want this exported as a downloadable `README.md` file or want it tailored for a different platform (like a website or academic report).
