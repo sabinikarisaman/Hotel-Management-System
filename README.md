@@ -48,7 +48,7 @@ The Grand Sapphire replaces inefficient manual processes with a secure, user-fri
 
 ### 🧾 Steps
 
-```bash
+
 # Clone the repository
 git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
 cd Hotel-Management-System
