@@ -64,44 +64,95 @@ Clone or download this repository:
 
 ```bash
 git clone https://github.com/sabinikarisaman/Hotel-Management-System.git
-Use code with caution.
-Markdown
+
+
 Navigate to the project folder:
+
 cd Hotel-Management-System
+IGNORE_WHEN_COPYING_START
+content_copy
+download
 Use code with caution.
 Bash
+IGNORE_WHEN_COPYING_END
+
 Compile the program:
+
 g++ main.cpp -o hotel.exe
+IGNORE_WHEN_COPYING_START
+content_copy
+download
 Use code with caution.
 Bash
+IGNORE_WHEN_COPYING_END
+
 Run the executable:
+
 ./hotel.exe
 
 # **Note:** If the command `./hotel.exe` does not work, try `./a.exe` or ensure your system's PATH includes the directory where `g++` is installed.
+IGNORE_WHEN_COPYING_START
+content_copy
+download
 Use code with caution.
 Bash
+IGNORE_WHEN_COPYING_END
 Option 2: Using Code::Blocks or Dev C++
+
 Open main.cpp in your IDE
+
 Create a new project (if required)
+
 Add main.cpp to the project
+
 Build and run the program using the Run button (usually F9)
+
 🧪 Testing Summary
+
 Unit, integration, and system-level testing performed.
 Regression and User Acceptance Testing (UAT) completed.
+
 Example Test Cases:
+
 Booking a room for a specific date range and verifying the room is unavailable for overlapping bookings.
+
 Generating a bill for a guest with restaurant charges and confirming the total amount is calculated correctly.
+
 All core functionalities tested successfully using defined test cases
+
 🧠 Future Improvements
+
 Replace file storage with an SQL database (e.g., SQLite) to improve data management and scalability.
+
 Add GUI using Qt or wxWidgets for a more user-friendly experience, potentially targeting cross-platform compatibility.
+
 Improve authentication with password hashing (e.g., bcrypt or Argon2) to enhance security.
+
 Add advanced search and filtering capabilities to the report generation module, allowing users to generate reports based on specific criteria (e.g., date range, room type, guest name).
+
 Develop a basic mobile interface (using a framework like React Native) for staff to access key functionalities on the go.
+
 👨‍💻 Author
+
 Sabinikari Saman
 Pursuing B.Tech in Computer Science & Engineering (AI & DS)
 Indian Institute of Information Technology, Senapati, Manipur
 Roll No: 220103031
+
 📃 License
+
 This project is developed as an academic submission. Please contact the author for reuse or collaboration.
+
+**INSTRUCTIONS:**
+
+1.  Select *all* the text in the code block above (from ` # 🏨 Hotel Management System` to the final ``).
+2.  Copy the selected text.
+3.  Paste the copied text into your `README.md` file, *completely replacing* the existing content.
+4.  Commit and push the changes to your GitHub repository.
+
+This will give you the fully corrected `README.md`.  Make sure you are replacing *everything* and not just a section. Good luck!
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+IGNORE_WHEN_COPYING_END
